@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     // Increase the chunk size warning limit (e.g., to 1000 kB)
-    chunkSizeWarningLimit: 1000,
+    chunkSizeWarningLimit: 10000,
 
     // Custom manual chunking to split vendor code
     rollupOptions: {
