@@ -263,7 +263,7 @@ margin-left: 10px;
 
 
 .container1{
-    /* background: url(./images/bg.jpg); */
+    background: url(./images/bg.jpg);
     height: 240vh;
     width: 100%;
     background-repeat: no-repeat;
