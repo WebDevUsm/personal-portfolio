@@ -44,10 +44,8 @@ const Herosection1 = () => {
             <img src="./images/11.png" alt="" />
             <img src="./images/11.png" alt="" />
           </div>
-
-
         </div>
-{/* 
+        {/* 
         <div className="carousal">
           <div className="carousel carousel-center bg-neutral rounded-box max-w-md space-x-4 p-4 flex">
             <div className="carousel-item flex">
@@ -96,87 +94,66 @@ const Herosection1 = () => {
 
 </div> */}
 
-<div className="card-content">
-  <div className="c-info">
-  <h1>My Projects</h1>
-  <p>Some Things I've Built So Far</p>
-  </div>
-<Slider {...settings}>
+        <div className="card-content">
+          <div className="c-info">
+            <h1>My Projects</h1>
+            <p>Some Things I've Built So Far</p>
+          </div>
+          <Slider {...settings}>
+            {data.map((d) => (
+              <div className="c-wrap">
+                <div className=" Card1 ">
+                  <div className="image">
+                    <img src={d.img} alt="image" />
+                  </div>
+                  <div className="Title">
+                    <h2>-- {d.name} --</h2>
+                    <p>{d.review}</p>
+                  </div>
+                  <div className="button">
+                    <button>View Code</button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </Slider>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-
-
-{data.map((d)=>(
-  <div className="c-wrap">
-    <div className=" Card1 ">
-  <div className="image">
-<img src={d.img} alt="image"/>
-
-  </div>
-  <div className="Title">
-<h2>-- {d.name} --</h2>
-<p>{d.review}</p>
-  </div>
-<div className="button">
-
-<button>View Code</button>
-</div>
-</div>
-  </div>
-
-))}
-</Slider>
-</div>
-</div>
-
-</div>
-
-
-
-      
-  )
-}
-
-
-const data=[
-{
-name: `Usman Shahid`,
-img: `./images/deadpool.jpg`,
-review: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, fugiat! Placeat consequatur, voluptatum nostrum laboriosam repellat neque modi aliquam amet culpa praesentium architecto, explicabo,`,
-
-},
-{
-name: `Usman Shahid`,
-img: `./images/deadpool.jpg`,
-review: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, fugiat! Placeat consequatur, voluptatum nostrum laboriosam repellat neque modi aliquam amet culpa praesentium architecto, explicabo,`,
-
-},
-{
-name: `Usman Shahid`,
-img: `./images/deadpool.jpg`,
-review: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, fugiat! Placeat consequatur, voluptatum nostrum laboriosam repellat neque modi aliquam amet culpa praesentium architecto, explicabo,`,
-
-},
-{
-name: `Usman Shahid`,
-img: `./images/deadpool.jpg`,
-review: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, fugiat! Placeat consequatur, voluptatum nostrum laboriosam repellat neque modi aliquam amet culpa praesentium architecto, explicabo,`,
-
-},
-{
-name: `Usman Shahid`,
-img: `./images/deadpool.jpg`,
-review: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, fugiat! Placeat consequatur, voluptatum nostrum laboriosam repellat neque modi aliquam amet culpa praesentium architecto, explicabo,`,
-
-},
-{
-name: `Usman Shahid`,
-img: `./images/deadpool.jpg`,
-review: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, fugiat! Placeat consequatur, voluptatum nostrum laboriosam repellat neque modi aliquam amet culpa praesentium architecto, explicabo,`,
-
-},
-
-
-]
-
+const data = [
+  {
+    name: `Usman Shahid`,
+    img: `./images/deadpool.jpg`,
+    review: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, fugiat! Placeat consequatur, voluptatum nostrum laboriosam repellat neque modi aliquam amet culpa praesentium architecto, explicabo,`,
+  },
+  {
+    name: `Usman Shahid`,
+    img: `./images/deadpool.jpg`,
+    review: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, fugiat! Placeat consequatur, voluptatum nostrum laboriosam repellat neque modi aliquam amet culpa praesentium architecto, explicabo,`,
+  },
+  {
+    name: `Usman Shahid`,
+    img: `./images/deadpool.jpg`,
+    review: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, fugiat! Placeat consequatur, voluptatum nostrum laboriosam repellat neque modi aliquam amet culpa praesentium architecto, explicabo,`,
+  },
+  {
+    name: `Usman Shahid`,
+    img: `./images/deadpool.jpg`,
+    review: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, fugiat! Placeat consequatur, voluptatum nostrum laboriosam repellat neque modi aliquam amet culpa praesentium architecto, explicabo,`,
+  },
+  {
+    name: `Usman Shahid`,
+    img: `./images/deadpool.jpg`,
+    review: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, fugiat! Placeat consequatur, voluptatum nostrum laboriosam repellat neque modi aliquam amet culpa praesentium architecto, explicabo,`,
+  },
+  {
+    name: `Usman Shahid`,
+    img: `./images/deadpool.jpg`,
+    review: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, fugiat! Placeat consequatur, voluptatum nostrum laboriosam repellat neque modi aliquam amet culpa praesentium architecto, explicabo,`,
+  },
+];
 
 export default Herosection1;

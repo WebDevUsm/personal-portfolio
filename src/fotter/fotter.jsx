@@ -5,7 +5,7 @@ export default function Fotter() {
     <div>
          <div id="footer">
         <div className="logoo">
-            <img src="../public/images/logo2.png" alt="logo" />
+            <img src="/logo2.png" alt="logo" />
         </div>
         <h4 className='font-semibold text-xl'>All Rights Are Reserved 2024, Develop By Usman Shahid</h4>
         <div className="links flex">

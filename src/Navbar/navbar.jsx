@@ -7,7 +7,7 @@ function Navbar() {
     <div>
         <div id="navbar">
             <div className="logo">
-                <img src="./images/logo2.png" alt="" />
+                <img src="logo2.png" alt="" />
             </div>
             <div className="links text-xl">
                 <li><a href="">Home</a></li>

@@ -263,12 +263,13 @@ margin-left: 10px;
 
 
 .container1{
-    background: url(./images/bg.jpg);
+    background: url(/bg.jpg);
     height: 240vh;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    /* padding-bottom: 100px; */
 }
 
 
